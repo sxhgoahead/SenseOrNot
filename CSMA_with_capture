@@ -1,5 +1,4 @@
-function[simp,outp,C]=CR_CSMA(n,q0,runt,theta,K,a,x0,rth,r0)
-
+function[simp,outp,C]=CSMA_cap(n,q0,runt,theta,K,a,x0,rth,r0)
 %input parameters:
 %n:  number of nodes in the network;
 %q0: initial transmission probability of each node;
@@ -24,7 +23,6 @@ rts=x0;
 
 ql=zeros(n,1);
 hols=zeros(n,1);
-
 
 ns=zeros(n,1);
 nre=zeros(n,1);
@@ -229,4 +227,3 @@ for I=1:n
 end
 
 simp=mean(p);
-          
